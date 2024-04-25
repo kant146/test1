@@ -15,6 +15,14 @@ const One = () => {
     let x = 0;
     let y = 0;
 
+    // const window1 = document.getElementById('one');
+    // const window2 = document.getElementById('two');
+    // const window3 = document.getElementById('three');
+
+    // const totalWidth = window.innerWidth - 20; // Adjust for padding and border
+    //   const remainingWidth = totalWidth - window1.offsetWidth - window2.offsetWidth;
+    //   window3.style.width = `${remainingWidth}px`;
+
     resizeableEle.style.top = "50px";
     resizeableEle.style.left = "50px";
 
@@ -118,8 +126,23 @@ const One = () => {
     };
   }, []);
 
+
+
+
+  // function resizeHandler() {
+  //     const totalWidth = window.innerWidth - 20; // Adjust for padding and border
+  //     const remainingWidth = totalWidth - window1.offsetWidth - window2.offsetWidth;
+  //     window3.style.width = `${remainingWidth}px`;
+  // }
+  // window1.addEventListener('mouseup', resizeHandler);
+  // window2.addEventListener('mouseup', resizeHandler);
+  // window.addEventListener('resize', resizeHandler);
+
+  // Initial resize to adjust layout on load
+  // window.onload = resizeHandler; 
+
   return (
-    <div className="container">
+    <div id="one" className="container">
       <div ref={ref} className="resizeable">
         <div ref={refLeft} className="resizer resizer-l"></div>
         <div ref={refTop} className="resizer resizer-t"></div>
