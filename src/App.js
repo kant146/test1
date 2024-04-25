@@ -123,15 +123,15 @@ function App() {
   // }, []);
 
   return (
-    <div className="container" style={{display:"flex", flexDirection:"row"}}>
+    <div className="containerBox " style={{margin:"auto",justifyContent:"center",display:"flex", flexDirection:"column"}}>
       {/* <div ref={ref} className="resizeable">
         <div ref={refLeft} className="resizer resizer-l"></div>
         <div ref={refTop} className="resizer resizer-t"></div>
         <div ref={refRight} className="resizer resizer-r"></div>
         <div ref={refBottom} className="resizer resizer-b"></div>
       </div> */}
-      <div style={{display:"flex", flexDirection:"column"}} >
-      <One/>
+      <div style={{width:"99.5vw",display:"flex", flexDirection:"row", }} >
+      <One />
       <Two/>
       </div>
       <div>

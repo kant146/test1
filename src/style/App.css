@@ -1,24 +1,74 @@
 
-
- .container {
+.container {
   border-radius: 5px;
-  width: 100vw;
-  height: 100vh;
-  background: #FFBC97;
+  width: 30vw;
+  height: 50vh;
+  max-width: 30vw;
+  max-height: 70vh;
+  /* background: #FFBC97; */
+  position: relative;
+}
+ .container2 {
+  border-radius: 5px;
+  width: 60vw;
+  height: 50vh;
+  /* background: gray; */
+  position: relative;
+}
+.container3 {
+  border-radius: 5px;
+  width: 90.5vw;
+  height: 49vh;
+  /* background: red; */
   position: relative;
 }
 
 .resizeable {
   position: absolute;
-  border: 2px solid #533535;
-  width: 100px;
-  height: 100px;
+  width: 80%;
+  height: 95%;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 15px;
-  min-height: 15px;
+  min-width: 150px;
+  min-height: 150px;
+  background-image: url("https://avatars.githubusercontent.com/u/47590877?v=4");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.resizeable2 {
+  position: absolute;
+  /* border: 2px solid #533535; */
+  width: 95%;
+  height: 95%;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 150px;
+  background-image: url("https://i.gifer.com/origin/f1/f1c839d0b1fd57dd8ee99936bfe7ecc8_w200.gif");
+  /* background-repeat: no-repeat; */
+  background-size:contain;
+}
+.resizeable3 {
+  position: absolute;
+  /* border: 2px solid #533535; */
+  width: 96%;
+  height: 80%;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: black;
+  /* background-image: url("https://i.makeagif.com/media/12-04-2022/YRG8g0.gif"); */
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
 .resizer {
@@ -56,4 +106,9 @@
   left: 0;
   top: 0;
   width: 5px;
+}
+
+.c3Text{
+  color: wheat;
+  overflow-wrap: break-word;
 }
